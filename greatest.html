@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greatest(){
+        var a=document.getElementById("first").value;
+        var b=document.getElementById("second").value;
+        var c=document.getElementById("third").value;
+        document.write(a);
+        document.write(",");
+        document.write(b);
+        document.write(",");
+        document.write(c);
+           if(a>b){
+            document.write("first...1,");
+            if(a>c){
+                // document.write("first");
+                ans=a;
+                
+            }
+           }
+           else if(b>a){
+            if(b>c){
+                // document.write(",");
+                // document.write(a);
+        // document.write(",");
+        // document.write(b);
+        // document.write(",");
+        // document.write(c);
+        //         document.write("second");
+                ans=b;
+            }
+           }
+            else if(c>a){
+                if(c>b){
+                    // document.write("third");
+                    // ans=c;
+                }
+            }
+            // document.write(",");
+            // document.write(ans);
+        document.getElementById("answer").value=ans;
+
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <label for="number">first number:</label>
+        <input type="number" name="first number" id="first">
+    </div>
+    <div>
+        <label for="number">second number:</label>
+        <input type="number" name="second number" id="second">
+    </div>
+    <div>
+        <label for="number">third number:</label>
+        <input type="number" name="third number" id="third">
+    </div>
+        <button onclick="greatest()">SUBMIT</button>
+    <br>
+    <div><label for="number">greatest number:</label>
+    <input type="number" name="output" id="answer">
+    </div>
+</body>
+</html>

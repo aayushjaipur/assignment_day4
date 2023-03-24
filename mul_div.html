@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multiply(){
+        var a=document.getElementById("first").value;
+        var b=document.getElementById("second").value;
+        var product=a*b;
+        document.getElementById("answer").value=product;
+
+        }
+        function devide(){
+        var a=document.getElementById("first").value;
+        var b=document.getElementById("second").value;
+        var devide=a/b;
+        document.getElementById("answer").value=devide;
+
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <label for="number">first number:</label>
+        <input type="number" name="enter first number" id="first">
+    </div>
+    <div>
+        <label for="number">second number:</label>
+        <input type="number" name="enter second number" id="second">
+    </div>
+    <button onclick="multiply()">multiply</button>
+    <button onclick="devide()">devide</button>
+    <br>
+    <div><label for="number">output:</label>
+    <input type="number" name="output" id="answer">
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function difference(){
+        var a=document.getElementById("first").value;
+        var b=13;
+        var ans=b-a;
+        if(ans>13){
+            ans=2*ans;
+        }
+        document.getElementById("answer1").value=ans;
+
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <label for="number">temperature(int celcius):</label>
+        <input type="number" name="enter number" id="first" placeholder="enter the number">
+    </div>
+    <button onclick="difference()">SUBMIT</button>
+    <br>
+    <div><label for="number">output:</label>
+    <input type="number" name="output" id="answer1">
+    </div>
+</body>
+</html>

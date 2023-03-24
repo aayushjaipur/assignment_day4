@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function celcius(){
+        var c=document.getElementById("first").value;
+        var f=((9*c)/5)+32;
+        document.getElementById("answer1").value=f;
+
+        }
+        function feranite(){
+        var f=document.getElementById("second").value;
+        var c=(f-32)*(5/9);
+        document.getElementById("answer2").value=c;
+
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <label for="number">temperature(int celcius):</label>
+        <input type="number" name="enter first number" id="first" placeholder="enter the temperature in celcius">
+    </div>
+    <button onclick="celcius()">convert to feranite</button>
+    <br>
+    <div><label for="number">output:</label>
+    <input type="number" name="output" id="answer1">
+    </div>
+    <div>
+        <label for="number">temperature(int feranite):</label>
+        <input type="number" name="number" id="second" placeholder="enter the temperature in feranite">
+    </div>
+    <button onclick="feranite()">convert to celcius</button>
+    <br>
+    <div><label for="number">output:</label>
+    <input type="number" name="output" id="answer2">
+    </div>
+</body>
+</html>
